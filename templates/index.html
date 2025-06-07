@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+    .jumbotron {
+        background-color: #f0f8ff;
+        padding: 3rem 2rem;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .jumbotron h1 {
+        font-weight: bold;
+        color: #343a40;
+    }
+
+    .jumbotron p.lead {
+        font-size: 1.25rem;
+        color: #6c757d;
+        margin-top: 10px;
+    }
+
+    .jumbotron .btn-primary {
+        font-size: 1.1rem;
+        padding: 0.6rem 1.5rem;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+    }
+
+    .jumbotron .btn-primary:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<div class="jumbotron">
+    <h1 class="display-4">Mood-Based Movie Recommender</h1>
+    <p class="lead">Click the button to get movie recommendations based on your mood!</p>
+    <hr class="my-4">
+    <form action="{{ url_for('recommend') }}" method="post">
+        <button type="submit" class="btn btn-primary">Get Recommendations</button>
+    </form>
+</div>
+{% endblock %}
