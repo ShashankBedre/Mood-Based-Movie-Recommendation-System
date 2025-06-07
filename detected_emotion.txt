@@ -1,0 +1,2 @@
+Detected Emotion: neutral
+Detected Emotion: happy
