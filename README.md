@@ -47,7 +47,7 @@ Mood-Based-Movie-Recommendation-System/
 ├── README.md
 └── requirements.txt                 # Python dependencies
 
-🚀 How It Works
+## 🚀 **How It Works**
 Face Detection and Emotion Classification (MATLAB):
 
 Captures image from webcam.
@@ -68,7 +68,7 @@ Selects movies from dataset or via API.
 
 Displays recommendations on a web interface or returns JSON.
 
-💻 Setup Instructions
+## 💻 **Setup Instructions**
 Prerequisites
 MATLAB (with Image Processing & ML Toolboxes)
 
@@ -100,7 +100,7 @@ Classify mood.
 
 Send mood to Flask backend.
 
-🧠 Mood-to-Genre Mapping (Example)
+🧠 **Mood-to-Genre Mapping (Example)**
 Mood	Genres
 Happy	Comedy, Romance
 Sad	Drama, Inspiration
@@ -111,7 +111,7 @@ Neutral	Sci-Fi, Documentary
 📷 Screenshots (Optional)
 Add images of facial detection, classified mood, and recommended movies webpage.
 
-📌 TODOs / Future Work
+📌 **TODOs / Future Work**
  Improve facial detection with deep learning (e.g., CNN)
 
  Use real-time video stream instead of static images
