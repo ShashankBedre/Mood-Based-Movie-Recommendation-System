@@ -47,11 +47,7 @@ Mood-Based-Movie-Recommendation-System/
 ├── README.md
 └── requirements.txt                 # Python dependencies
 
-# 🎬 Mood-Based Movie Recommendation System
-
-A hybrid system that recommends movies based on the user's current mood, detected via facial expression analysis using MATLAB. The detected emotion is classified using an SVM (Support Vector Machine) model and sent to a Python Flask backend, which suggests movies mapped to that mood.
-
----
+```
 
 ## 🚀 **How It Works**
 
@@ -83,5 +79,54 @@ A hybrid system that recommends movies based on the user's current mood, detecte
 ### 🔧 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/Mood-Based-Movie-Recommendation-System.git
+git clone https://github.com/ShashankBedre/Mood-Based-Movie-Recommendation-System.git
 cd Mood-Based-Movie-Recommendation-System
+```
+
+## 🐍 2. Set Up Python Environment
+
+cd flask_app
+pip install -r requirements.txt
+python app.py
+
+## 📷 3. Run MATLAB Script
+
+- Open emotion_detection.m in MATLAB.
+- Make sure your webcam is connected.
+- Run the script. It will:
+  - Detect your facial expression.
+  - Classify the emotion.
+  - Send the result (e.g., "Happy") to the Flask server.
+ 
+## 🧠 Mood-to-Genre Mapping (Example)
+
+| Mood      | Genres              |
+| --------- | ------------------- |
+| Happy     | Comedy, Romance     |
+| Sad       | Drama, Inspiration  |
+| Angry     | Action, Thriller    |
+| Surprised | Mystery, Adventure  |
+| Neutral   | Sci-Fi, Documentary |
+
+## 📷 Screenshots (Optional)
+
+Screenshots of:
+ - MATLAB emotion detection
+ - Classified mood output
+ - Flask interface with movie recommendations
+
+## 📌 TODOs / Future Work
+ - Enhance face detection using CNN or deep learning models
+ - Use real-time video instead of static webcam capture
+ - Add user login (OAuth) and profiles for personalized watchlists
+ - Integrate The Movie Database (TMDB) API for real-time movie data
+
+## 📜 License
+This project is licensed under the MIT License – see the LICENSE file for details.
+
+## 🤝 Acknowledgements
+ - MATLAB Documentation
+
+ - Flask Documentation
+ 
+ - The Movie Database (TMDB) API
