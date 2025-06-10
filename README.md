@@ -46,3 +46,86 @@ Mood-Based-Movie-Recommendation-System/
 │
 ├── README.md
 └── requirements.txt                 # Python dependencies
+
+🚀 How It Works
+Face Detection and Emotion Classification (MATLAB):
+
+Captures image from webcam.
+
+Extracts facial features.
+
+Classifies emotion using a pre-trained SVM model.
+
+Sends the detected mood to the Flask server.
+
+Mood Mapping and Movie Recommendation (Python Flask):
+
+Receives the mood.
+
+Matches mood to one or more movie genres.
+
+Selects movies from dataset or via API.
+
+Displays recommendations on a web interface or returns JSON.
+
+💻 Setup Instructions
+Prerequisites
+MATLAB (with Image Processing & ML Toolboxes)
+
+Python 3.7+
+
+Flask
+
+scikit-learn, pandas, etc.
+
+1. Clone the Repository
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/Mood-Based-Movie-Recommendation-System.git
+cd Mood-Based-Movie-Recommendation-System
+2. Setup Python Environment
+bash
+Copy
+Edit
+cd flask_app
+pip install -r requirements.txt
+python app.py
+3. Run MATLAB Script
+Open emotion_detection.m in MATLAB and run it. It will:
+
+Detect the user's facial expression.
+
+Classify mood.
+
+Send mood to Flask backend.
+
+🧠 Mood-to-Genre Mapping (Example)
+Mood	Genres
+Happy	Comedy, Romance
+Sad	Drama, Inspiration
+Angry	Action, Thriller
+Surprised	Mystery, Adventure
+Neutral	Sci-Fi, Documentary
+
+📷 Screenshots (Optional)
+Add images of facial detection, classified mood, and recommended movies webpage.
+
+📌 TODOs / Future Work
+ Improve facial detection with deep learning (e.g., CNN)
+
+ Use real-time video stream instead of static images
+
+ Add OAuth + user profiles for personalized watchlists
+
+ Connect to TMDB API for real-time movie data
+
+📜 License
+MIT License – See LICENSE file for details.
+
+🤝 Acknowledgements
+MATLAB Docs
+
+Flask Documentation
+
+The Movie DB API
